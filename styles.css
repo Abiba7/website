@@ -1,0 +1,210 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* HERO SECTION */
+.hero {
+    min-height: 100vh;
+    background: linear-gradient(
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ),
+    url("images (1).jpg") center/cover no-repeat;
+    color: white;
+    padding: 20px 60px;
+}
+
+/* NAVBAR */
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+/* MENU ICON */
+.menu-icon {
+    font-size: 28px;
+    cursor: pointer;
+    display: none;
+}
+
+/* NAV LINKS */
+#navlinks {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+#navlinks li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    text-transform: capitalize;
+}
+
+#navlinks li a:hover {
+    border-bottom: 2px solid white;
+}
+
+/* HERO TEXT */
+.hero h1 {
+    margin-top: 150px;
+    font-size: 60px;
+    line-height: 1.1;
+}
+
+.hero p {
+    margin: 20px 0;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+/* BUTTON */
+.hero button {
+    padding: 12px 28px;
+    border: none;
+    background: #ff5a5f;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.hero button:hover {
+    background: #e0484d;
+}
+
+/* DESTINATIONS SECTION */
+.beach {
+    padding: 60px;
+    text-align: center;
+}
+
+.beach h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.beach p {
+    color: #555;
+    margin-bottom: 40px;
+}
+
+/* CARDS */
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 260px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    background: white;
+}
+
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.card p {
+    padding: 15px;
+    font-weight: bold;
+}
+
+/* PLAN SECTION */
+.plan {
+    background: #f5f5f5;
+    padding: 60px;
+    text-align: center;
+}
+
+.plan h3 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.plan p {
+    color: #666;
+    margin-bottom: 40px;
+}
+
+/* FOOTER ICONS */
+.footer {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.list {
+    width: 200px;
+}
+
+.list img {
+    width: 60px;
+    margin-bottom: 10px;
+}
+
+.list p {
+    font-weight: bold;
+}
+
+/* MOBILE RESPONSIVE */
+@media (max-width: 768px) {
+
+    .hero {
+        padding: 20px;
+    }
+
+    .hero h1 {
+        font-size: 40px;
+        margin-top: 100px;
+    }
+
+    /* SHOW MENU ICON */
+    .menu-icon {
+        display: block;
+    }
+
+    /* HIDE NAV LINKS */
+    #navlinks {
+        position: absolute;
+        top: 70px;
+        right: 20px;
+        background: rgba(0,0,0,0.9);
+        flex-direction: column;
+        width: 200px;
+        padding: 20px;
+        display: none;
+    }
+
+    #navlinks.show {
+        display: flex;
+    }
+
+    #navlinks li {
+        margin-bottom: 15px;
+    }
+
+    .cards,
+    .footer {
+        flex-direction: column;
+        align-items: center;
+    }
+}

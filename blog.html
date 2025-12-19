@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="blog.css" rel=" stylesheet">
+</head>
+<body>
+    <section class="blog-section" id="blog">
+        <h2 class="blog-title">Latest Travel Blogs</h2>
+        <p class="blog-subtitle">Travel tipes ,destination guides & stories</p>
+        <div class="blog-container">
+            <div class="blog-card">
+                <img src="city.jpg" alt="Beach Travel">
+                <div class="blog-content">
+                    <span class="date">June - 12th  - 2025</span>
+                    <h3>Top Beach Destination </h3>
+                    <p>Discover the most beautiful beaches to relax ,explore, and  enjoy unforttable moment.</p>
+                    <a href="#" class="read-more">Read more</a>
+                </div>
+            </div>
+
+            <div class="blog-card">
+                <img src="city.jpg" alt="cite Travel">
+                <div class="blog-content">
+                    <span class="date">June - 20th -2025</span>
+                    <h3>Best Cities  to Visit</h3>
+                    <p>Explore Vibrant cities full of culture, history, and amzing experience.
+                        <span class="more-text">
+                            These destination affer crystal -clear waters,white sands, and unforttable experience for every traveler
+                        </span>
+                    </p>
+                    <a href="#" class="read-more">Read more</a>
+                </div>
+            </div>
+
+            <div class="blog-card">
+                <img src="adventure.jpg" alt="Adventure Travel">
+                <div class="blog-content">
+                    <span class="date">June - 25th -2025</span>
+                    <h3>Adventure Travel Tips</h3>
+                    <p>Planning an adventure ? Here are smart tips to make your journey safe and exciting.    </p>
+                    <a href="#" class="read-more">Read more</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <script>
+        const readMoreButton = document.querySelectorAll(".read-more");
+
+        readMoreButton.forEach(button =>{
+            button.addEventListener("click", function(e) {
+                e.preventDefault();
+
+                const text = this.previousElementSibling.querySetector(".more-text");
+
+                if (text.style.display ==="inliine"){
+                    text.style.display ="none";
+                    this.textContent ="Read More";
+                } else{
+                    text.style.display ="inline";
+                    this.textContent="Read Less";
+            }
+            });
+        });
+    </script>
+</body>
+</html>

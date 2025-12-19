@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Website</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+          integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+          crossorigin="anonymous"
+          referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <div class="nav">
+            <div class="logo">TRAVEL</div>
+
+            <!-- Menu Icon -->
+            <div class="menu-icon" id="menuIcon" onclick="toggleMenu()">&#9776;</div>
+
+            <!-- Navigation Links -->
+            <ul id="navlinks">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="destination.html">Destination</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+
+        <h1>Discover<br>the World</h1>
+        <p>Explore new places and experience<br>the adventure of a lifetime</p>
+        <button>Get Started</button>
+    </section>
+
+    <!-- DESTINATIONS -->
+    <div class="beach">
+        <h2>Explore your next destination</h2>
+        <p>Discover new places with our travel guides and recommendations.</p>
+
+        <div class="cards">
+            <div class="card">
+                <img src="images (1).jpg" alt="Paris">
+                <p>Paris, France</p>
+            </div>
+
+            <div class="card">
+                <img src="agra-uttar-pradesh-india-12152022-taj-mahal-agra-india-tourists-visiting-popular-tourist-attraction_556412-3590.avif" alt="Agra">
+                <p>Agra, India</p>
+            </div>
+
+            <div class="card">
+                <img src="download.jpg" alt="Santorini">
+                <p>Santorini, Greece</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- PLAN TRIP -->
+    <div class="plan">
+        <h3>Plan your trip</h3>
+        <p>Choose your date, select your destination, and book your flight</p>
+
+        <div class="footer">
+            <div class="list">
+                <img src="9759370.png" alt="">
+                <p>1. Select Date</p>
+            </div>
+
+            <div class="list">
+                <img src="1000_F_461014418_Dc21P38oMKTBIZVTDKcdq6RA2sjv3dht.jpg" alt="">
+                <p>2. Choose Destination</p>
+            </div>
+
+            <div class="list">
+                <img src="images.png" alt="">
+                <p>3. Book Flight</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- JAVASCRIPT -->
+    <script>
+        function toggleMenu() {
+            const navLinks = document.getElementById("navlinks");
+            const icon = document.getElementById("menuIcon");
+
+            navLinks.classList.toggle("show");
+
+            if (navLinks.classList.contains("show")) {
+                icon.innerHTML = "&times;"; // close icon
+            } else {
+                icon.innerHTML = "&#9776;"; // menu icon
+            }
+        }
+    </script>
+
+</body>
+</html>

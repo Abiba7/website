@@ -1,0 +1,26 @@
+*{
+     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial,sans-serif;
+}
+body{
+    background-color: beige;
+    color: black;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    width: 100%;
+    background: black;
+}
+.nav ul a{
+    display: flex;
+    text-decoration: none;
+    justify-content: space-between;
+}
+.nav ul{
+    display: flex;
+    gap: 20px;
+}

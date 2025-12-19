@@ -1,0 +1,75 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url(Travel-Bucket-List-Wallpaper-Mural-for-Wall.jpg);
+    width: 100%;
+}
+.hero{
+    margin: 20px ;
+    text-align: left;
+}
+.hero p{
+    line-height: 1.6;
+
+}
+.conutry{
+    margin:10px
+}
+.conutry p{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.conutry ul{
+    text-align: left;
+    text-decoration: none;
+
+}
+ul{
+    text-decoration: none;
+}
+.conutry ul li{
+    text-decoration: none;
+    list-style: none;
+    gap:20px;
+    text-transform: capitalize;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    
+}
+
+
+.hero h1{
+    margin-bottom: 20px;
+    font-weight: bolder;
+    font-size: 24px;
+    text-decoration: underline;
+    text-transform: uppercase;
+    margin-top: 10px;
+
+}
+.hero button{
+    margin-top: 40px;
+    padding: 10px;
+    border-radius: 8px;
+    background-color:steelblue;
+    margin-right: 20px;
+    border: none;
+
+}
+.hero button a{
+    color:#fff;
+    font-size: 15px;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px;
+
+}
+.btn{
+    color: black;
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="nav.css" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            My Logo
+        </div>
+        <div class="meun-icon" onclick="toggleMeun()"> &#9776;
+        </div>
+        <ul id="navLinks">
+            <li><a href="#">Home</a></li>
+                 <li><a href="#">Home</a></li>
+                      <li><a href="#">Home</a></li>
+                           <li><a href="#">Home</a></li>
+                                <li><a href="#">Home</a></li>
+        </ul>
+    </nav>
+    <h2>gghj</h2>
+    <script>
+        function toggleMeun(){
+            const nav = document.getElementById("navLinks");
+            const icon = document.getElementById("meunIcon");
+            nav.classList.toggle("show");
+            //switch between menu icon and close icon
+            if (nav.classList.contains("show")){
+                icon.innerHTML = "&times;";// close icon
+            }else{
+                icon.innerHTML ="&#9776;";
+            }
+        }
+    </script>
+    
+</body>
+</html>
